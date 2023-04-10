@@ -15,7 +15,7 @@ export default function Skeleton({children}: {children: ReactNode}) {
                 {/* <link rel="icon" href="/favicon.ico" /> */}
             </Head>
             <Header/>
-            <main className='flex flex-col items-center mx-auto pt-12 px-10 sm:px-36'>
+            <main className='flex flex-col items-center mx-auto pt-12 px-10 sm:px-36 w-4/5 '>
                 {children}
             </main>
         </>

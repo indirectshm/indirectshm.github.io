@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { NavLink } from './variables';
-import { Routes } from './variables';
+import { ROUTES } from './variables';
 
 
 export default function Navbar() {
@@ -12,9 +12,9 @@ export default function Navbar() {
     };
 
     return (
-        <nav className='flex'>
+        <nav className='flex px-8'>
             {
-                Routes.titles().map(x => generate_tab(x))
+                ROUTES.titles().map(x => generate_tab(x))
             }
         </nav>
     )

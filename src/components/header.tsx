@@ -5,7 +5,7 @@ export default function Header() {
 
     return (
         <header>
-            <div className='text-center text-4xl py-14'>
+            <div className='text-center text-4xl py-14 px-8'>
                 <h1>Indirect Structural Health Monitoring</h1>
             </div>
             <Navbar/>

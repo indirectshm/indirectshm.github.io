@@ -4,7 +4,7 @@ export type NavLink = {
     sublinks?: Array<NavLink>
 };
 
-export const Routes = {
+export const ROUTES = {
     titles: (): Array<NavLink> => [
         {name: 'Home', ref: '/'},
         {name: 'Research', ref: '/research', sublinks: [
