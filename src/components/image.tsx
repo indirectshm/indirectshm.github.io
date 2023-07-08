@@ -1,14 +1,15 @@
 import NextImage from 'next/image';
 
-type ImageType = {
+export type ImageType = {
     src: string,
     width: number,
     height: number,
     alt: string,
-    className?: string
+    className?: string,
+    descriptor?: string,
 }
 
-export default function Image({src, width, height, alt, className} : ImageType) {
+export default function Image({src, width, height, alt, className, descriptor} : ImageType) {
     /**
      * Image component that wraps the next/image component for correct image reference on Github pages.
      */
@@ -20,5 +21,11 @@ export default function Image({src, width, height, alt, className} : ImageType) 
     // Old logic
     // let computed_src = is_prod ? '/ishm' + src : src;
 
-    return <NextImage src={computed_src} width={width} height={height} alt={alt} className={className}/>
+    return (
+        <>
+            <NextImage src={computed_src} width={width} height={height} alt={alt} className={className}/>
+            <div>{descriptor}</div>
+        </>
+    );
+        
 }
