@@ -1,8 +1,10 @@
+import Motivation from "./motivation"
+
 export default function Home() {
 
     return (
         <>
-            <h1>Home</h1>
+            <Motivation/>
         </>  
     )
 }
