@@ -99,7 +99,7 @@ In order to create more intelligent, well-performing and explainable models that
             </div>
             <div className='py-5'>
                 See Figure 6 for a flowchart of the proposed (offline) methodology that summarises our explanations above. 
-                It works `offline' since we assume all of the data has completely arrived before we process it and figure out where the anomalous transitions take place (if there are any!).
+                It works 'offline' since we assume all of the data has completely arrived before we process it and figure out where the anomalous transitions take place (if there are any!).
             </div>
             <Image 
                 src='/research/blog2_img4.png'
@@ -110,7 +110,7 @@ In order to create more intelligent, well-performing and explainable models that
                 className='py-5'
             />
             <div className='py-5'>
-                As it turns out, it is not difficult to make the above algorithm work in an `online' environment, where we process the data as it arrives to get a real-time view of how the CAC responds in real-time. 
+                As it turns out, it is not difficult to make the above algorithm work in an 'online' environment, where we process the data as it arrives to get a real-time view of how the CAC responds in real-time. 
                 What makes this work is the linear structure of the matrix profile: when a new point is ingested, we only need to recompute the pairwise distances to the new point, which gives a massive reduction in time complexity. For the algorithm in real-time, we compute all of the above transformations (Welch, VMD) in batches as data arrives. 
                 We then update the matrix profile one point at a time; every 100 points, we compute the updated CAC and save it in an array. At the end, we produce a gif to visualise how the CAC reacts in real-time to perceived anomalous transitions. 
                 For the online methodology flowchart, see Figure 7.
@@ -161,7 +161,6 @@ In order to create more intelligent, well-performing and explainable models that
             
             <h2 className='text-2xl font-medium'>Towards the Future!</h2>
 
-            
             <div className='py-5'>
                 As you can tell from our code, this is still just a proof-of-concept! 
                 There is still much to do to make the algorithm applicable in real-world situations. 
@@ -177,7 +176,7 @@ In order to create more intelligent, well-performing and explainable models that
             How can we adapt our model to detect 'peaks in time' automatically in real-time? 
             A simple solution would be to test whether the CAC window has an 'active' peak (a localised maximum above a fixed threshold). 
             In order to account for noise, we can enforce that this peak must persist for a certain number of frames. If detected, display a visual alert for a potential anomalous shift so that shutdown, inspection and repair decisions can be made. 
-            Figure 8 has a flowchart of what such an detector would look like. The anomaly `persisting' in multiple frames was one of the key indicators separating the true anomalous transitions and noise that we observed in our experiments, the second feature being the magnitude of the peaks. 
+            Figure 8 has a flowchart of what such an detector would look like. The anomaly 'persisting' in multiple frames was one of the key indicators separating the true anomalous transitions and noise that we observed in our experiments, the second feature being the magnitude of the peaks. 
             Tuning would have to be performed to remove false positives from the result. 
             Machines wrongly categorising x as y, how many times have we heard this before? Too many false positives would not be good for the engineer's morale...too many false negatives and the building comes down! 
             Thankfully, our model is able to capture all true positives - a good sign!

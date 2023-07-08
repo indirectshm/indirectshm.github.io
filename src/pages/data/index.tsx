@@ -18,7 +18,7 @@ export default function Data() {
             </div>
 
             <div className='py-5'>
-                Fig. 3 presents the acceleration response of the vehicle’s front and rear axles as the vehicle travels over the different bridge states. It is presupposed that the vehicle passes over the bridge regularly while the bridge state potentially deteriorates over time due to progressive damage. Additionally, it's assumed that the vehicle’s dynamic characteristics remain constant. 
+                Fig. 3 presents the acceleration response of the vehicle's front and rear axles as the vehicle travels over the different bridge states. It is presupposed that the vehicle passes over the bridge regularly while the bridge state potentially deteriorates over time due to progressive damage. Additionally, it's assumed that the vehicle's dynamic characteristics remain constant. 
             </div>
             <Image 
                 src='/data/data_synthetic_2.png'
@@ -41,7 +41,7 @@ export default function Data() {
                 className='py-5'
             />
             <div className='py-5'>
-                In his study, the acceleration time signals obtained from the vehicle’s axles are utilized for drive-by bridge inspection, and the process of pre-processing will be described in later sections. Refer to Tables 1, 2 and 3 for a more detailed outline of bridge states and methods of retrieval.
+                In his study, the acceleration time signals obtained from the vehicle's axles are utilized for drive-by bridge inspection, and the process of pre-processing will be described in later sections. Refer to Tables 1, 2 and 3 for a more detailed outline of bridge states and methods of retrieval.
             </div>
             {/* <div className='py-5'>
                 As explained, there are in total 10 different bridge states, (i.e., a healthy bridge (BC0), a damaged bridge with damage at mid-span with three different severity (BCM1:BCM3), a damaged bridge with damage at quarter-span with three different severity (BCQ1:BCQ3), and a damaged bridge with damage at three-quarter-span with three different severity (BCT1:BCT3), which will be investigated in this study. 
@@ -51,12 +51,12 @@ export default function Data() {
             <div className='py-5'>
                 The time response of each axle is obtained from the time instance they enter into the bridge until they leave the bridge. 
                 That means the response for each axle is only considered for the duration when they are on the bridge.
-                Fig. 3 shows the acceleration response of the vehicle’s front and rear axles once the vehicle travels over the bridge states BC0 and BCM1 to BCM3.
+                Fig. 3 shows the acceleration response of the vehicle's front and rear axles once the vehicle travels over the bridge states BC0 and BCM1 to BCM3.
                 It is assumed that the prescribed vehicle passes over the bridge regularly, and the state of the bridge deteriorates over time, for instance, due to progressive damage. 
-                Further, it is assumed that the vehicle’s dynamic characteristics remain unchanged. In the context of any sensing, it is vital to calibrate the sensor to ensure its transfer function, reflecting the input/output relationship, has not changed; the same applies here when the vehicle is acting as a sensor.
+                Further, it is assumed that the vehicle's dynamic characteristics remain unchanged. In the context of any sensing, it is vital to calibrate the sensor to ensure its transfer function, reflecting the input/output relationship, has not changed; the same applies here when the vehicle is acting as a sensor.
             </div>
             <div className='py-5'>
-                In order to create a dataset of vehicle responses for training and testing our data-driven framework (which will be presented in Section 5), the response of the vehicle’s axles traveling over the healthy bridge 900 times is first obtained. 
+                In order to create a dataset of vehicle responses for training and testing our data-driven framework (which will be presented in Section 5), the response of the vehicle's axles traveling over the healthy bridge 900 times is first obtained. 
                 Further, for each other bridge state, the response of the vehicle traveling 100 times over the bridge is acquired. To introduce variability and randomness in the simulated vehicle responses, not only 5% random noise is added to the obtained raw time signals, but variability in the road roughness is also considered. 
                 In other words, it is assumed that, in practice, this dataset may be collected over the course of a long time window from a bridge under investigation. Hence, the condition of the road surface may also experience some variability, which is modeled by considering a different random type A profile on each pass of the vehicle. 
                 Indeed, this additional source of variability in this dataset makes the problem more challenging compared to the case when exactly the same road roughness is considered for all the vehicle runs in the dataset.
