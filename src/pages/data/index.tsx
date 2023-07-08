@@ -8,9 +8,6 @@ export default function Data() {
             <div className='py-5'>
                 To explore the dataset, click <a className='text-cyan-700' href={DATASETS.halfcar()}>here</a>!
             </div>
-            <div className='py-5'>
-                The data, diagrams, and details are sourced from <a className='text-cyan-700' href='https://www.sciencedirect.com/science/article/abs/pii/S0022460X23000482#sec4'>Unsupervised learning-based framework for indirect structural health monitoring using adversarial autoencoder.</a>
-            </div>
 
             <h2 className='text-2xl font-medium'>Simulated Datasets</h2>
             <ul className="list-disc">
@@ -130,6 +127,16 @@ export default function Data() {
                 The vehicle was moved using an electric motor and pulley system, with speed maintained by an electronic controller. This movement mechanism was depicted in Fig 4(a). The study aimed to assess drive-by bridge inspection methods and optimize detection rather than refining the vehicle used for inspections. Thus, the vehicle and associated systems used were selected based on availability and previous successful data transmission outcomes on the bridge model used.
             </div>
             <div className='py-5'></div> */}
+            <h2 className='text-2xl font-medium'>Acknowledgements</h2>
+            <div className='py-5'>
+                The data, diagrams, and details are sourced from <a className='text-cyan-700' href='https://www.sciencedirect.com/science/article/abs/pii/S0022460X23000482#sec4'>Unsupervised learning-based framework for indirect structural health monitoring using adversarial autoencoder.</a>
+            </div>
+            <div className='py-5'>
+                A. Calderon Hurtado a, K. Kaur a, M. Makki Alamdari a, E. Atroshchenko a, K.C. Chang b, C.W. Kim b. 
+                Unsupervised learning-based framework for indirect structural health monitoring using adversarial autoencoder.
+                Journal of Sound and Vibration, 2023.
+            </div>
+            <div><a className='text-cyan-700' href='bibtex.bibtex'>Download Bibtex</a></div>
         </>  
     )
 };
