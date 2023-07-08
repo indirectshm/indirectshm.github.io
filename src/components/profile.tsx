@@ -11,7 +11,7 @@ export type ProfileType = {
     links?: String
 }
 
-export default function Profile({name, title, image, description} : profile) {
+export default function Profile({name, title, image, description} : ProfileType) {
     let {src, alt, width, height, className} = image;
 
     return (
